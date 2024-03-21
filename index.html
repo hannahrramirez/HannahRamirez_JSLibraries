@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <title>Elte</title>
+        <link
+            rel="icon"
+            href="./assets/images/elte-logo-small.png"
+            sizes="64x64"
+            type="image/png"
+        />
+
+        <link href="./assets/scripts/lightbox2/css/lightbox.min.css" rel="stylesheet" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <!-- Logo -->
+            <a href="#" class="nav_link">
+                <div class="logo">
+                    <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 243 53"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                        <title>Elte Logo</title>
+                        <g
+                            id="Style-guide"
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                        >
+                            <g
+                                id="Branding_Wordmark"
+                                transform="translate(-778.000000, -374.000000)"
+                                fill="#191b1c"
+                                class="elte-logo-fill"
+                            >
+                                <g
+                                    id="Logo/Elte/White"
+                                    transform="translate(778.000000, 374.000000)"
+                                >
+                                    <g id="Elte_logo_Black">
+                                        <path
+                                            id="Fill-6"
+                                            class="logo-path"
+                                            d="M210.9361 9.7825L210.9361 21.6156L229.5312 21.6156L229.5312 31.3927L210.9361 31.3927L210.9361 43.2229L242.4837 43.2229L242.4837 53L189.441 53L189.4418 0L242.4845 0L242.4845 9.7825L210.9361 9.7825"
+                                        />
+                                        <path
+                                            class="logo-path"
+                                            id="Fill-1"
+                                            d="M119.826483 53 66.7902486 53 66.7902486 0.171736434 88.2827909 0.171736434 88.2827909 43.2545736 119.826483 43.2545736 119.826483 53"
+                                        ></path>
+                                        <path
+                                            class="logo-path"
+                                            id="Fill-3"
+                                            d="M155.425655 9.92250388 155.425655 53 133.933921 53 133.933517 9.92250388 115.341153 9.92250388 115.341153 0.171736434 174.018422 0.171736434 174.018422 9.91593023 155.425655 9.92250388"
+                                        ></path>
+                                        <path
+                                            id="Fill-4"
+                                            class="logo-path"
+                                            d="M21.4925 9.9225L21.4925 21.7173L40.0853 21.7173L40.0853 31.4627L21.4925 31.4627L21.4925 43.2546L53.0362 43.2546L53.0362 53L0 53L0.0004 0.1717L53.037 0.1717L53.037 9.9225L21.4925 9.9225"
+                                        />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <!-- Nav items -->
+            <ul class="web">
+                <li><a href="#" class="nav_link">New</a></li>
+                <li><a href="#" class="nav_link">Furniture</a></li>
+                <li><a href="#" class="nav_link">Lighting</a></li>
+                <li><a href="#" class="nav_link">Decor</a></li>
+                <li><a href="#" class="nav_link">Newsroom</a></li>
+            </ul>
+
+            <button id="nav-btn" class="mobile" onclick="updateNavMobile()">
+                <img src="./assets/images/hamburger-menu-icon.png" />
+            </button>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h2>Dining Tables</h2>
+        </header>
+
+        <!-- Mobile Container -->
+        <div class="container mobile">
+            <div class="glide multi">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides"></ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">◄</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">►</button>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+            </div>
+        </div>
+
+        <!-- Web Container -->
+        <div class="container web"></div>
+
+        <footer>
+            <a href="#">© 2024 ELTE | </a>
+            <a href="#">Privacy Policy | </a>
+            <a href="#">Accessibility | </a>
+            <a href="#">Terms</a>
+        </footer>
+
+        <!-- Mobile Popover Nav -->
+        <ul id="nav-mobile" class="mobile">
+            <li><a href="#" class="nav_link">New</a></li>
+            <li><a href="#" class="nav_link">Furniture</a></li>
+            <li><a href="#" class="nav_link">Lighting</a></li>
+            <li><a href="#" class="nav_link">Decor</a></li>
+            <li><a href="#" class="nav_link">Newsroom</a></li>
+        </ul>
+
+        <!-- Web Dropdown Nav -->
+        <div id="nav-dropdown">
+            <!-- New -->
+            <div class="dropdown_item_new">
+                <div class="left">
+                    <div>
+                        <ul>
+                            <li><a href="#" class="dropdown_item_header">Furniture</a></li>
+                            <li><a href="#" class="dropdown_item_header">Rugs</a></li>
+                            <li><a href="#" class="dropdown_item_header">Lighting</a></li>
+                            <li><a href="#" class="dropdown_item_header">Decor</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="dropdown_item_header">Shop All New</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img alt="banner" width="100%" src="./assets/images/nav-new-banner.png" />
+                </div>
+            </div>
+            <!-- Furniture -->
+            <div class="dropdown_item_furniture">
+                <div class="left">
+                    <ul>
+                        <li class="dropdown_item_header">Seating</li>
+                        <li>
+                            <ul>
+                                <li>Sofas</li>
+                                <li>Sectionals</li>
+                                <li>Chairs</li>
+                                <li>Dining Chairs</li>
+                                <li>Bar & Counter Stools</li>
+                                <li>Desk Chairs</li>
+                                <li>Ottomans, Poufs & Stools</li>
+                                <li>Benches</li>
+                                <li>Chaises & Daybeds</li>
+                                <li>Outdoor Seating</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Tables</li>
+                        <li>
+                            <ul>
+                                <li>Dining Tables</li>
+                                <li>Coffee Tables</li>
+                                <li>Side Tables</li>
+                                <li>Console Tables</li>
+                                <li>Desks</li>
+                                <li>Outdoor Tables</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Bedroom</li>
+                        <li>
+                            <ul>
+                                <li>Beds</li>
+                                <li>Dressers & Chests</li>
+                                <li>Nightstands</li>
+                                <li>Mattresses</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Storage</li>
+                        <li>
+                            <ul>
+                                <li>Sideboards & Media Consoles</li>
+                                <li>Bookcases & Cabinets</li>
+                                <li>Floor Accessories, Bins & Baskets</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Tabletop</li>
+                        <li>
+                            <ul>
+                                <li>Dinnerware & Serveware</li>
+                                <li>Barware</li>
+                                <li>Table Linens</li>
+                                <li>Placemats</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Pillows & Throws</li>
+                        <li>
+                            <ul>
+                                <li>Pillows</li>
+                                <li>Throws</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Clearance</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img alt="banner" width="100%" src="./assets/images/nav-furniture-banner.png" />
+                </div>
+            </div>
+            <!-- Lighting -->
+            <div class="dropdown_item_lighting">
+                <div class="left">
+                    <ul>
+                        <li class="dropdown_item_header">Ceiling</li>
+                        <li>
+                            <ul>
+                                <li>Chandeliers</li>
+                                <li>Pendants Lights</li>
+                                <li>Flushmounts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Table & Floor</li>
+                        <li>
+                            <ul>
+                                <li>Table Lights</li>
+                                <li>Floor Lights</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Wall</li>
+                        <li>
+                            <ul>
+                                <li>Sconces</li>
+                                <li>Picture Lights</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Bath</li>
+                        <li>
+                            <ul>
+                                <li>Wall Sconces</li>
+                                <li>Flushmounts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Outdoor</li>
+                        <li>
+                            <ul>
+                                <li>Outdoor Lighting</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Clearance</li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Shop All Lighting</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img alt="banner" width="100%" src="./assets/images/nav-lighting-banner.png" />
+                </div>
+            </div>
+            <!-- Decor -->
+            <div class="dropdown_item_decor">
+                <div class="left">
+                    <ul>
+                        <li class="dropdown_item_header">Home Accents</li>
+                        <li>
+                            <ul>
+                                <li>Vases</li>
+                                <li>Bowls & Platters</li>
+                                <li>Urns & Jars</li>
+                                <li>Books & Bookends</li>
+                                <li>Candleholders</li>
+                                <li>Home Fragrance</li>
+                                <li>Botanicals</li>
+                                <li>Mats & Outdoor Rugs</li>
+                                <li>Pots & Planters</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Art & Decor</li>
+                        <li>
+                            <ul>
+                                <li>Handmade Objects</li>
+                                <li>Decorative Objects</li>
+                                <li>Prints & Wall Decor</li>
+                                <li>Mirrors</li>
+                                <li>Picture Frames</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Bedding</li>
+                        <li>
+                            <ul>
+                                <li>Pillows & Duvets</li>
+                                <li>Decorative Pillows</li>
+                                <li>Quilts & Coverlets</li>
+                                <li>Sheets & Pillowcases</li>
+                                <li>Duvet Covers & Shams</li>
+                                <li>Mattresses</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Storage</li>
+                        <li>
+                            <ul>
+                                <li>Trays</li>
+                                <li>Boxes</li>
+                                <li>Bar Carts & Cabinets</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Vintage</li>
+                        <li>
+                            <ul>
+                                <li>Vintage Seating</li>
+                                <li>Vintage Tables</li>
+                                <li>Vintage Storage</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Outdoor</li>
+                        <li>
+                            <ul>
+                                <li>Outdoor Seating</li>
+                                <li>Outdoor Tables</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="dropdown_item_header">Clearance</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img alt="banner" width="100%" src="./assets/images/nav-decor-banner.png" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script>
+        <script src="./assets/scripts/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+        <script src="./assets/scripts/anime/lib/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+        <script>
+            /* dummy data */
+            const data = [
+                {
+                    code: '118845000000',
+                    name: 'Georgian Architectural Dining Table',
+                    price: '$7,565.00',
+                    description:
+                        'The Georgian Architectural Dining Table is handcrafted from genuine English reclaimed timber sourced from disused buildings in the UK, sometimes up to 100 years old. A really warm and welcoming chunky table to anchor the room for casual sit downs or more formal dinner parties.',
+                    img: './assets/images/georgian-architectural-table.png'
+                },
+                {
+                    code: '124025006000',
+                    name: 'Vintage Scarpa Samo Dining Table',
+                    price: '$17,945.00',
+                    description:
+                        'Designed in 1971 by Carlo Scarpa, the Samo Dining Table is the Italian architect and designer’s modern interpretation of Classical architecture. Features an oversized top and tiered step base.',
+                    img: './assets/images/vintage-scarpa-table.png'
+                },
+                {
+                    code: '118041000000',
+                    name: 'Ellipse Dining Table',
+                    price: '$7,647.00',
+                    description:
+                        "With its bold, geometric proportions, the Ellipse Dining Table has a simple and soothing form. Featuring a large oval table top set on two angled legs, this table's sandblasted oak blends the beauty of refined textures with the romance of raw materials.",
+                    img: './assets/images/ellipse-table.png'
+                },
+                {
+                    code: '107522338000',
+                    name: 'Dresden Dining Table',
+                    price: '$9,945.00',
+                    description:
+                        'Crafted in Los Angeles, California, the Dresden Dining Table is a beautiful display of solid reclaimed wood set on elegantly curved T-shaped metal legs for a rustic modern feel. The reclaimed wood was originally harvested and milled 50 to 100 years ago, and has been seasoned in sunny California for decades, giving it unparalleled stability and resistance to distortion or structural movement. While the open space provided by the metal legs allows for versatile seating arrangements.\n\nThe grain of the timber shows the superior density of the wood from ancient trees, and the natural, aged patina of the old-growth timber is preserved in the manufacturing process, giving the furniture a look and feel that cannot be replicated in new wood. A sustainable piece made without toxic glues or stains, this gorgeous table will command attention in any space.',
+                    img: './assets/images/dresden-table.png'
+                },
+                {
+                    code: '125055000000',
+                    name: 'HB 120 Dining Table',
+                    price: '$8,996.00',
+                    description:
+                        "Designed by German designer Horst Bruning in the 1960s, the HB 120 Dining Table offers clean mid-century modern lines and architectural intrigue. Featuring a round glass tabletop set on an open chrome-plated steel frame, this table's design focuses on the simple idea of minimalism, functionality, durability and timelessness.\n\nIn 1963, Horst Bruning set up an architecture and design office in Stuttgart. During this period, Bruning came in contact with Kill International and the architect duo Fabricius & Kastholm, involving a successful exchange of ideas, which in the end led to international recognition and success. It was in this period the late 60's that the HB 120 Dining Table was designed.",
+                    img: './assets/images/hb-120-table.png'
+                },
+                {
+                    code: '108081966000',
+                    name: 'Reform Dining Table',
+                    price: '$6,965.00',
+                    description:
+                        'With its balanced proportions, the Reform Dining Table offers an elegantly refined style. Beautifully displaying a rich oak finish, this table features a racetrack-shaped tabletop set on concave and convex curved legs.',
+                    img: './assets/images/reform-table.png'
+                }
+            ];
+
+            const { computePosition, hide, offset, autoUpdate } = window.FloatingUIDOM;
+
+            /* logo animation */
+            anime({
+                targets: '.logo-path',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                duration: 3000,
+                endDelay: 1000,
+                easing: 'linear',
+                loop: true
+            });
+
+            if (getDeviceType() === 'desktop' && window.innerWidth >= 1024) {
+                updateNavWeb();
+                showWebList();
+            } else {
+                showMobileList();
+            }
+
+            let cleanupNavMobile = null;
+            function updateNavMobile() {
+                const menuBtn = document.querySelector('#nav-btn');
+                const menu = document.querySelector('#nav-mobile');
+
+                const isHidden = window.getComputedStyle(menu).display !== 'flex';
+
+                if (isHidden) {
+                    cleanupNavMobile = autoUpdate(
+                        menuBtn,
+                        menu,
+                        () => {
+                            showDropdownItem(menuBtn, menu);
+                            menu.style.flexDirection = 'column';
+                        },
+                        {
+                            ancestorScroll: false
+                        }
+                    );
+                } else {
+                    hideDropdownItem(menu);
+                    cleanupNavMobile();
+                }
+            }
+
+            function updateNavWeb() {
+                let hideTimeout = false;
+                const navItems = document.querySelectorAll('nav ul > li a');
+
+                navItems.forEach(function (elem, index) {
+                    const floatingEl = document.querySelectorAll('#nav-dropdown > div')[index];
+                    if (!floatingEl) return;
+
+                    let cleanup = null;
+
+                    elem.onmouseenter = function () {
+                        cleanup = autoUpdate(
+                            elem,
+                            floatingEl,
+                            () => showDropdownItem(elem, floatingEl),
+                            {
+                                ancestorScroll: false
+                            }
+                        );
+
+                        floatingEl.onmouseenter = function () {
+                            if (hideTimeout !== false) {
+                                clearTimeout(hideTimeout);
+                                hideTimeout = false;
+                            }
+                        };
+
+                        floatingEl.onmouseleave = function () {
+                            hideDropdownItem(floatingEl);
+                            cleanup();
+                        };
+                    };
+
+                    elem.onmouseleave = function () {
+                        hideTimeout = setTimeout(function () {
+                            hideDropdownItem(floatingEl);
+                            cleanup();
+                        }, 10);
+                    };
+                });
+            }
+
+            function showNavDropdown(refEl, floatingEl) {
+                computePosition(refEl, floatingEl, {
+                    placement: 'bottom',
+                    middleware: [offset(-1), hide()]
+                }).then(({ y, middlewareData }) => {
+                    Object.assign(floatingEl.style, {
+                        left: 0,
+                        top: `${y}px`
+                    });
+
+                    if (middlewareData.hide) {
+                        Object.assign(floatingEl.style, {
+                            visibility: middlewareData.hide.referenceHidden ? 'hidden' : 'visible'
+                        });
+                    }
+                });
+            }
+
+            function showDropdownItem(refEl, floatingEl) {
+                floatingEl.style.display = 'flex';
+                showNavDropdown(refEl, floatingEl);
+            }
+
+            function hideDropdownItem(floatingEl) {
+                floatingEl.style.display = 'none';
+            }
+
+            function getDeviceType() {
+                const ua = navigator.userAgent;
+
+                if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+                    return 'tablet';
+                } else if (
+                    /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+                        ua
+                    )
+                ) {
+                    return 'mobile';
+                }
+                return 'desktop';
+            }
+
+            function showWebList() {
+                const container = document.querySelector('.container.web');
+
+                data.forEach((item, index) => {
+                    const divElem = document.createElement('div');
+                    divElem.className = 'list-item';
+                    divElem.innerHTML = `
+					<a
+						href=${item.img}
+						data-lightbox="tables"
+						data-title="
+								<h3>${item.name}</h3>
+								<p>${item.price}</p>
+								<hr/>
+								<label>Description</label>
+								<p class='description-text'>${item.description}</p>
+								<p style='text-transform: none'>Product Code: ${item.code}</p>
+						"
+                    >
+						<img src=${item.img} width="100%" alt=${item.name}/>
+
+						<div class="product">
+							<h5>${item.name}</h5>
+							<p>${item.price}</p>
+						</div>
+					</a
+                >
+				`;
+
+                    container.appendChild(divElem);
+                });
+
+                lightbox.option({
+                    maxWidth: window.innerWidth < 1280 ? 600 : 900,
+                    albumLabel: 'Item %1 of %2',
+                    wrapAround: true
+                });
+            }
+
+            /* show mobile carousel */
+            function showMobileList() {
+                const glideSlides = document.querySelector('.glide__slides');
+                const glideBullets = document.querySelector('.glide__bullets');
+
+                data.forEach((item, index) => {
+                    const liElem = document.createElement('li');
+                    liElem.className = 'glide__slide list-item';
+                    liElem.innerHTML = `
+					<img
+						src=${item.img}
+						width="100%"
+						alt=${item.name}
+						key=${item.code}
+					/>
+					<div class="product">
+					<h3>${item.name}</h3>
+					<p>${item.price}</p>
+					<hr />
+					<div class="description">
+						<label>Description</label>
+						<p class="description-text">${item.description}</p>
+						<p>Product Code: ${item.code}</p>
+					</div>
+					</div>
+				`;
+
+                    glideSlides.appendChild(liElem);
+
+                    const btnElem = document.createElement('button');
+                    btnElem.className = 'glide__bullet';
+                    btnElem.setAttribute('data-glide-dir', `=${index}`);
+                    glideBullets.appendChild(btnElem);
+                });
+
+                const glide = new Glide('.multi', {
+                    type: 'carousel',
+                    focusAt: 'center',
+                    perView: 1,
+                    gap: 0
+                }).mount();
+            }
+        </script>
+    </body>
+</html>
